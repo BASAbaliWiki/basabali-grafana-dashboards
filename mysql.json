@@ -164,7 +164,7 @@
           "calculatedInterval": "10m",
           "datasourceErrors": {},
           "errors": {},
-          "expr": "rate(mysql_global_status_queries{namespace=~\"$namespace\", job=~\"$job\", instance=~\"$instance\"}[$__interval])",
+          "expr": "rate(mysql_global_status_queries{namespace=~\"$namespace\", job=~\"$job\", instance=~\"$instance\"}[$__rate_interval])",
           "format": "time_series",
           "interval": "1m",
           "intervalFactor": 1,
